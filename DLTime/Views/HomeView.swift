@@ -30,7 +30,6 @@ struct HomeView: View {
                 if downloadViewModel.downloadCreateWithSuccess {
                     VStack {
                         if let lastDownload = downloadViewModel.downloads.sorted(by: { $0.date < $1.date }).last {
-                            
                             VStack(spacing: 16) {
                                 Spacer()
                                 if lastDownload.variation == 0 {
